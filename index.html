@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حلمك ✨</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="card" id="form">
+
+<h2>حلمك ✨</h2>
+
+<input id="dream" placeholder="اكتب حلمك هنا">
+
+<textarea id="goals" placeholder="اكتب أهدافك (كل هدف في سطر)"></textarea>
+
+<textarea id="quote" placeholder="اكتب جملة تحفيزية"></textarea>
+
+<input type="date" id="target">
+
+<button onclick="build()">اعرض حلمي 🚀</button>
+
+</div>
+
+<div class="card hidden" id="result">
+
+<h2>✨ حلمي</h2>
+<p id="d"></p>
+
+<h3 id="days"></h3>
+
+<h3>🎯 أهدافي</h3>
+<pre id="g"></pre>
+
+<h3>💬 جملتي</h3>
+<p id="q"></p>
+
+<button onclick="share()">شارك حلمي 🔗</button><br><br>
+
+<button onclick="resetDream()">ابدأ من جديد 🔁</button>
+
+</div>
+
+<audio id="song" src="song.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+margin:0;
+font-family:Arial;
+overflow:hidden;
+}
+
+.bg{
+position:fixed;
+width:100%;
+height:100%;
+background:linear-gradient(270deg,#ff9a9e,#fad0c4,#a1c4fd);
+background-size:400% 400%;
+animation:bg 10s infinite;
+z-index:-1;
+}
+
+@keyframes bg{
+0%{background-position:0%}
+50%{background-position:100%}
+100%{background-position:0%}
+}
+
+.card{
+background:white;
+width:90%;
+max-width:350px;
+margin:60px auto;
+padding:20px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+input,textarea{
+width:90%;
+margin:10px 0;
+padding:10px;
+border-radius:10px;
+border:none;
+background:#f2f2f2;
+}
+
+button{
+padding:10px 25px;
+border:none;
+border-radius:20px;
+background:#ff6b81;
+color:white;
+font-size:16px;
+}
+
+.hidden{
+display:none;
+}
+
+pre{
+white-space:pre-wrap;
+}
